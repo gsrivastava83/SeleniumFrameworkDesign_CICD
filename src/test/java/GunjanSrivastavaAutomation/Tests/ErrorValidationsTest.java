@@ -21,7 +21,7 @@ public class ErrorValidationsTest extends BaseTest {
 
 		landingPage.login("gunjan@bedbath.com", "Bedbath100"); //give wrong username or password
 		String errorMessage = landingPage.getLoginErrorMessage();
-		Assert.assertEquals(errorMessage, "Incorrect email."); //trying to fail the test by passing wrong text message here
+		Assert.assertEquals(errorMessage, "Incorrect email and password."); 
 	}
 
 	@Test
